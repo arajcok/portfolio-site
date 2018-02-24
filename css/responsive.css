@@ -1,0 +1,267 @@
+/* Base display. Place `aside` at bottom of page */
+@media screen and (min-width: 0px) {
+    aside {
+        order: 1;
+    }
+}
+
+
+/* Minor breakpoint. Increase font sizes */
+@media screen and (min-width: 500px) {
+    /* Header */
+    .logo {
+        margin: 0 0 0 10px;
+    }
+
+    h1, h4 {
+        margin: 0 15px 0 0;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+
+    figcaption {
+        font-size: 1.25em;
+    }
+
+    article>p, article>a {
+        font-size: 1.15em;
+    }
+}
+
+
+/* Major breakpoint. Adjust position of `aside` and `main` */
+@media screen and (min-width: 700px) {
+    body {
+        margin: 15px;
+    }
+
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .main {
+        order: 2;
+        width: 75%;
+    }
+
+    /* Aside */
+    aside {
+        display: flex;
+        justify-content: center;
+        order: 1;
+        width: 25%;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    } 
+
+    .box {
+        width: 85px;
+        height: 85px;
+        float: right;
+        margin: 0 0 0.25em 0; 
+    }
+
+    .color-hex {
+        margin: 0.25em 0 1em 0;
+    }
+
+    /* Font sizes */
+    h1, h2 {
+        font-size: 2.5em;
+    }
+
+    figcaption, .color-hex {
+        font-size: 1.5em;
+    }
+
+    article>p, article>a, h4 {
+        font-size: 1.3em;
+    }
+}
+
+
+/* Major breakpoint. Layout nearly matches design mockup */
+@media screen and (min-width: 800px) {
+    body {
+        margin: 25px 50px 25px 50px;
+    }
+
+    .page {
+        justify-content: flex-end;
+    }
+    
+    .empty {
+        width: 15%;
+    }
+
+    /* Header */
+    header {
+        order: 1;
+        width: 85%;
+        align-self: flex-end;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+        margin: 0;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+
+    h1, h4 {
+        margin: 0;
+    }
+
+    /* Aside */
+    aside {
+        order: 2;
+        width: 15%;
+        justify-content: flex-start;
+    }
+
+    .box {
+        width: 60px;
+        height: 60px;
+    }
+
+    ul {
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    .color-hex {
+        font-size: 1em;
+    }
+
+    /* Main content */
+    .main-img {
+        order: 3;
+        width: 85%;
+        margin: 1.5em 0 0 0;
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        order: 4;
+        width: 85%;
+        align-self: flex-end;
+        justify-content: space-between;
+    }
+
+    article {
+        width: 30%;
+    }
+
+    article>figure {
+        margin: 0;
+    }
+
+    h2 {
+        width: 100%;
+        font-size: 2em;
+        text-align: left;
+    }
+
+    figcaption {
+        font-size: 1em;
+    }
+
+    article>p {
+        font-size: 1em;
+        margin: 0.5em 0 0.5em 0;
+        text-align: left;
+    }
+
+    article>a {
+        font-size: 1em;
+    }
+}
+
+
+/* Minor breakpoint. Adjust paragraph text and boxes */
+@media screen and (min-width: 900px) {
+    .box {
+        width: 75px;
+        height: 75px;
+    }
+    
+    .color-hex {
+        font-size: 1.15em;
+    }
+
+    article>p {
+        text-align: justify;
+    }
+}
+
+
+/* Minor breakpoint. Margin to body */
+@media screen and (min-width: 1000px) {
+    body {
+        margin: 25px 75px 25px 75px;
+    }
+
+    figcaption {
+        margin: 0.25em 0 0 0;
+    }
+}
+
+
+/* Major breakpoint. Fully match mockup design */
+@media screen and (min-width: 1200px) {
+    body {
+        margin: 25px 100px 25px 100px;
+    }
+
+    /* Header */
+    .logo {
+        width: 110px;
+        height: 110px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h4 {
+        font-size: 1.25em;
+    }
+
+    /* Aside */
+    aside {
+        justify-content: flex-start;
+    }
+
+    .box {
+        width: 75px;
+        height: 75px;
+    }
+
+    .color-hex {
+        font-size: 1.5em;
+    }
+
+    /* Main content */
+    figcaption {
+        font-size: 1.25em;
+    }
+
+    h2 {
+        margin: 1em 0 0.5em 0;
+    }
+}
