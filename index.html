@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:200" rel="stylesheet">
+        <title>Portfolio Site</title>
+    </head>
+
+    <body>
+
+        <div class="page">
+            <div class="empty"></div>
+            <!-- Header -->
+            <header>
+                <img class="logo" src="img/logo.svg" alt="Logo">
+                <div class="author">
+                    <h1>Andrew Rajcok</h1>
+                    <h4>Full Stack Web Developer</h4>
+                </div>
+            </header>
+
+            <!-- List of color blocks -->
+            <aside>
+                <ul>
+                    <li>
+                        <div class="box azure"></div>
+                        <p class="color-hex">#02b3e4</p>
+                    </li>
+                    <li>
+                        <div class="box dark-bley"></div>
+                        <p class="color-hex">#2d3c49</p>
+                    </li>
+                    <li><div class="box sand-blue"></div>
+                        <p class="color-hex">#7d97ad</p>
+                    </li>
+                </ul>
+            </aside>
+
+            <!-- Main image -->
+            <figure class="main-img">
+                <!-- Image attribution: https://www.pexels.com/photo/black-laptop-computer-keyboard-163130/ -->
+                <img src="img/keyboard-small.jpeg" srcset="img/keyboard-small.jpeg 640w, img/keyboard-medium.jpeg 1280w, img/keyboard-large.jpeg 2560w" sizes="100vw" alt="Black keyboard">
+            </figure>
+
+            <!-- Featured Work -->
+            <section class="main">
+                <h2>Featured Projects</h2>
+
+                <article>
+                    <figure>
+                        <!-- Image attribution: https://www.pexels.com/photo/curve-industry-photography-vintage-65128/ -->
+                        <img src="img/movie-small.jpeg" srcset="img/movie-small.jpeg 640w, img/movie-medium.jpeg 1280w, img/movie-large.jpeg 2560w" sizes="(min-width: 800px) 30vw, 100vw" alt="Movie clapboard">
+                    <figcaption>Movie Trailer Website</figcaption>
+                    </figure>
+                    <p class="description">A project consisting of server-side code to store a list of movies, including box art imagery and a movie trailer URL.</p>
+                    <a href="https://github.com/arajcok/ud036_StarterCode">https://github.com/arajcok/ud036_StarterCode</a>
+                </article>
+
+                <article>
+                    <figure>
+                        <!-- Image attribution: https://www.pexels.com/photo/close-up-of-menu-313700/ -->
+                        <img src="img/menu-small.jpeg" srcset="img/menu-small.jpeg 640w, img/menu-medium.jpeg 1280w, img/menu-large.jpeg 2560w" sizes="(min-width: 800px) 30vw, 100vw" alt="Menu">
+                        <figcaption>Item Catalog</figcaption>
+                    </figure>
+                    <p class="description">An application that provides a list of items within a variety of categories as well as a user registration and authentication system that allows registered users to edit, delete, and add to their own items. This project is currently under development.</p>
+                    <a href="https://github.com/arajcok">https://github.com/arajcok</a>
+                </article>
+
+                <article>
+                    <figure>
+                        <!-- Image attribution: https://www.pexels.com/photo/map-navigation-guide-108942/ -->
+                        <img src="img/map-small.jpeg" srcset="img/map-small.jpeg 640w, img/map-medium.jpeg 1280w, img/map-large.jpeg 2560w" sizes="(min-width: 800px) 30vw, 100vw" alt="Map">
+                        <figcaption>Neighborhood Map</figcaption>
+                    </figure>
+                    <p class="description">A single-page application featuring a neighborhood map with additional functionality added to the application, including map markers and third-party APIs. This project is currently under development.</p>
+                    <a href="https://github.com/arajcok">https://github.com/arajcok</a>
+                </article>
+            </section>
+        </div>
+    </body>
+</html>
