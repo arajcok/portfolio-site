@@ -46,7 +46,7 @@
         height: 150px;
     }
 
-    .main {
+    main {
         order: 2;
         width: 75%;
     }
@@ -153,7 +153,7 @@
         margin: 1.5em 0 0 0;
     }
 
-    .main {
+    main {
         display: flex;
         flex-wrap: wrap;
         order: 4;
